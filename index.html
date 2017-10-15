@@ -2,38 +2,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style>
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
 </head>
 <body>
 <div class="container">
     <div class="row">
-		
-        <div class="col-md-3 text-right text-uppercase">
-		
-            <img class="img-responsive" alt="Image" style="border:3px solid black; height: 50%; width: 50%; object-fit: contain" align="center" src="images/AD.jpg">
+        <div class="col-md-3">
+            <img class="img-responsive" align="center" src="images/AD.jpg">
         </div>
         <div class="col-md-9 text-right text-uppercase">
             <h1>Adithya Mahesh Bariki</h1>
             <h3>Actively Seeking Full Time Opportunities</h3>
         </div>
-    
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-right text-uppercase">
-				<a href = "https://github.com/adithyamahesh596"> 
-					<img src = "images/github.png" alt = "Adithya Mahesh" border = "0"/> 
-				</a>
-			</div>
-		</div>
-	</div><br/>
-	<br/>
+    </div>
     <div class="row">
         <div class="col-md-12">
-            <img class="img-responsive" style="border:3px solid black; height: 100%; width: 100%; object-fit: contain" align="center" src="images/mwsu.jpg">
+            <img class="img-responsive" style="border:3px solid black" align="center" src="images/mwsu.jpg">
         </div>
     </div><br /><br />
     <div class="row">
@@ -44,8 +51,8 @@
     <div class="row">
         <div class="col-md-6 text-center">
             <img class="img-responsive" style="border:3px solid black" src="images/venue_search.jpg" data-toggle="modal" data-target="#project5">
-            <h3>GOOGLE VENUE SEARCH</h3>
-            <p><a href="https://github.com/adithyamahesh596/venue_search_react">https://github.com/adithyamahesh596/venue_search_react</a></p>
+            <h3>LOCATION SEARCH APPLICATION</h3>
+            <p><a href="https://github.com/adithyamahesh596/Location_Search_Application">https://github.com/adithyamahesh596/Location_Search_Application</a></p>
         </div>
 		<div class="col-md-6 text-center">
             <img class="img-responsive" style="border:3px solid black" src="images/ATM.png" data-toggle="modal" data-target="#project1">
@@ -169,7 +176,7 @@
                 This project gave me a hands-on experience on React and how to bundle files using webpack.
                 Basically, when user enters <b>query, location</b> and <b>radius</b> as input and submits he would get
                 the near by locations on what he specified. Even, the locations rendered are marked on
-                Google maps, for the convenience of the user. I have used <b>Foursquare API</b> to fetch data and display it on google maps
+				<b>Google maps</b>, for the convenience of the user. I have used <b>Foursquare API</b> to fetch data and display it on google maps
 
             </div>
             <div class="modal-footer">
