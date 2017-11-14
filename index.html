@@ -1,7 +1,10 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -33,18 +36,44 @@ box-shadow: 0;
 display: inline-block;
 float:right;
 }
+
+#header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  
+}
+
+img,body {
+	max-width: 100%;
+}
+
+
+#header h1,h3 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-align:right;
+}
+
+#b1,#b2,#b3 h3{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	text-align:center;
+}
+
 </style>
 
 </head>
 <body>
-<div class="container" width="600">
-    <div class="row" width="1200">
-        <div class="col-md-3" width="1200">
-            <img class="img-responsive" style="position: relative;top:0;left:0;" src="images/AD.jpg">
-        </div>
-        <div class="col-md-9 text-right text-uppercase">
-            <h1>Adithya Mahesh Bariki</h1>
-            <h3>Actively Seeking Full Time Opportunities</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" id="header">
+            <img class="img-responsive" src="images/AD.jpg">
+        
+            <h1 style="text-transform:uppercase;">Adithya Mahesh Bariki</h1>
+            <h3 style="text-transform:uppercase;"><i>Actively Seeking Full Time Opportunities</i></h3>
         </div>
     </div>
 	<div class="row">
@@ -84,36 +113,36 @@ float:right;
             <h2>Featured Work</h2>
         </div>
     </div><br /><br />
-    <div class="row">
-        <div class="col-md-6 text-center">
-            <img class="img-responsive" width="555px" height="555px" style="border:3px solid black" src="images/venue_search.png" data-toggle="modal" data-target="#project5">
-            <h3>LOCATION SEARCH APPLICATION</h3>
+    <div class="row" id="b1">
+        <div class="col-md-6">
+            <img class="img-responsive" width="555px" height="300px" style="border:3px solid black" src="images/venue_search.png" data-toggle="modal" data-target="#project5">
+            <h3 class="text-center">LOCATION SEARCH APPLICATION</h3>
             <p><a href="http://location-search.cf">https://github.com/adithyamahesh596/Location_Search_Application</a></p>
         </div>
-		<div class="col-md-6 text-center">
-            <img class="img-responsive" style="border:3px solid black" src="images/ATM.png" data-toggle="modal" data-target="#project1">
-            <h3>FT-ATM</h3>
+		<div class="col-md-6">
+            <img class="img-responsive" width="555px" height="300px" style="border:3px solid black" src="images/ATM.png" data-toggle="modal" data-target="#project1">
+            <h3 class="text-center">FT-ATM</h3>
             <p><a href="https://github.com/adithyamahesh596/FT-ATM">https://github.com/adithyamahesh596/FT-ATM</a></p>
         </div>
         
     </div>
-    <div class="row">
-        <div class="col-md-6 text-center">
-            <img class="img-responsive" style="border:3px solid black" src="images/node.jpg" data-toggle="modal" data-target="#project3">
-            <h3>LIBRARY APP WITH NODE AND EXPRESS</h3>
+    <div class="row" id="b2">
+        <div class="col-md-6">
+            <img class="img-responsive" width="555px" height="300px" style="border:3px solid black" src="images/node.jpg" data-toggle="modal" data-target="#project3">
+            <h3 class="text-center">LIBRARY APP WITH NODE AND EXPRESS</h3>
             <p><a href="https://github.com/adithyamahesh596/Library_App_with_Nodejs_And_Express">https://github.com/adithyamahesh596/Library_App_with_Nodejs_And_Express</a></p>
         </div>
         
-		<div class="col-md-6 text-center">
-            <img class="img-responsive" style="border:3px solid black" src="images/logo.png" alt="React Logo" data-toggle="modal" data-target="#project2">
-            <h3>REACT</h3>
+		<div class="col-md-6">
+            <img class="img-responsive" width="555px" height="300px" style="border:3px solid black" src="images/logo.png" alt="React Logo" data-toggle="modal" data-target="#project2">
+            <h3 class="text-center">REACT</h3>
             <p><a href="https://github.com/adithyamahesh596/React">https://github.com/adithyamahesh596/React</a></p>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="b3">
         <div class="col-md-6 text-center">
-            <img class="img-responsive" style="border:3px solid black" src="images/bin.png" data-toggle="modal" data-target="#project4">
-            <h3>SHELL INTERPRETATION</h3>
+            <img class="img-responsive" width="555px" height="300px" style="border:3px solid black" src="images/bin.png" data-toggle="modal" data-target="#project4">
+            <h3 class="text-center">SHELL INTERPRETATION</h3>
             <p><a href="https://github.com/adithyamahesh596/5143-OpSys-bariki/tree/master/YO-Shell.v.1">https://github.com/adithyamahesh596/5143-OpSys-bariki/tree/master/YO-Shell.v.1</a></p>
         </div>
     </div>
