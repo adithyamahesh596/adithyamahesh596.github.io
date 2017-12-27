@@ -64,13 +64,13 @@ var projects = {
             "description" : "<a href='http://locationsearch.cf'>http://locationsearch.cf</a><br>A React based web application which allows users to search places by categories, zip code and radius. Upon querying, the locations are then displayed on a Google Map. <br> <b><u>Responsibilities:</u></b><br>" +
             "• Built user interfaces by creating re-usable <b>React</b> components. • Created responsive UI using <b>Bootstrap</b>.<br> • Queried and retrieved location places by category and radius using <b>Four Square API</b>. <br>• Displayed locations within a <b>Google Map</b> using Google map markers.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification. <br> • Deployed and hosted the application using <b>Amazon Web Services (AWS)</b>.<br>" +
             "<b><u>Tech stack</u></b>: React, Bootstrap, Webpack, Babel ES6, Node.js, AWS, Google Maps, Four Square API. ",
-            "images" : ["https://www.facebook.com/photo.php?fbid=975225059319477&l=35a980b90c","https://www.facebook.com/photo.php?fbid=975225072652809&l=9291623f57"]
+            "images" : ["https://adithyamahesh596.github.io/images/location.png","https://adithyamahesh596.github.io/images/location2.png"]
         },
         {
             "title" : "COURSIFY",
             "dates" : "July, 2017 - Present",
             "description" : "<a href='http://coursify.surge.sh'>http://coursify.surge.sh</a><br>A React based web application which allows users to add courses and manage courses.",
-            "images" : ["https://www.facebook.com/photo.php?fbid=975225052652811&l=72cff38c21", "https://www.facebook.com/photo.php?fbid=975225049319478&l=6e0c2ef82d", "https://www.facebook.com/photo.php?fbid=975225055986144&l=d788d33dd0"]
+            "images" : ["https://adithyamahesh596.github.io/images/coursify3.png", "https://adithyamahesh596.github.io/images/coursify4.png", "https://adithyamahesh596.github.io/images/coursify5.png"]
         }
     ]
 
