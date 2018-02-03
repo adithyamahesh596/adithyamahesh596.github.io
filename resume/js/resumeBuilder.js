@@ -53,13 +53,13 @@ var education = {
 var projects = {
     "projects" :[
         {
-            "title" : "WISH-N-FLY",
+            "title" : "<b>ROVUP</b>, Sunnyvale, CA",
             "dates" : "March, 2017 - Present",
-            "description" : "<a href='http://wishnfly.com'>http://wishnfly.com</a><br>A web based application which allows private schools to request and notify temporary substitute teachers. <br> <b><u>Responsibilities:</u></b><br>   • Built user interfaces by creating re-usable <b>React</b> components.<br> • Created responsive UI using <b>Bootstrap</b>.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification.<br>  • Used <b>AWS</b> to host the application.<br>  \t • Used <b>Jenkins</b> to run integration steps and AWS Code Deploy for deployments (Post-Build action).<br> <b><u>Tech stack</u></b>: React, Bootstrap, Webpack, PostgreSQL, Babel ES6, Node.js, AWS etc.",
+            "description" : "A Web based application which allows travel agents to create, manage and promote their travel packages on different social media platforms. <br> <b><u>Responsibilities:</u></b><br>   • Built user interfaces by creating re-usable <b>React</b> components.<br> • Created responsive UI using <b>Bootstrap</b>.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification.<br>  • Used <b>AWS</b> to host the application.<br>  \t • Used <b>Jenkins</b> to run integration steps and AWS Code Deploy for deployments (Post-Build action).<br> <b><u>Tech stack</u></b>: React, Bootstrap, Webpack, PostgreSQL, Babel ES6, Node.js, AWS etc.",
             "images" : []
         },
         {
-            "title" : "LOCATION SEARCH APPLICATION",
+            "title" : "<b>LOCATION SEARCH APPLICATION</b>, Wichita Falls, TX",
             "dates" : "September, 2016 - January, 2017",
             "description" : "<a href='http://locationsearch.cf'>http://locationsearch.cf</a><br>A React based web application which allows users to search places by categories, zip code and radius. Upon querying, the locations are then displayed on a Google Map. <br> <b><u>Responsibilities:</u></b><br>" +
             "• Built user interfaces by creating re-usable <b>React</b> components. <br>• Created responsive UI using <b>Bootstrap</b>.<br> • Queried and retrieved location places by category and radius using <b>Four Square API</b>. <br>• Displayed locations within a <b>Google Map</b> using Google map markers.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification. <br> • Deployed and hosted the application using <b>Amazon Web Services (AWS)</b>.<br>" +
@@ -67,8 +67,8 @@ var projects = {
             "images" : ["https://adithyamahesh596.github.io/images/location.png","https://adithyamahesh596.github.io/images/location2.png"]
         },
         {
-            "title" : "COURSIFY",
-            "dates" : "July, 2017 - Present",
+            "title" : "<b>COURSIFY</b>, Wichita Falls, TX",
+            "dates" : "July, 2017 - November, 2017",
             "description" : "<a href='http://coursify.surge.sh'>http://coursify.surge.sh</a><br>A React based web application which allows users to add courses and manage courses.",
             "images" : ["https://adithyamahesh596.github.io/images/coursify3.png", "https://adithyamahesh596.github.io/images/coursify4.png", "https://adithyamahesh596.github.io/images/coursify5.png"]
         }
