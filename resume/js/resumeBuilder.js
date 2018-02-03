@@ -59,17 +59,17 @@ var projects = {
             "images" : []
         },
         {
-            "title" : "<b>LOCATION SEARCH APPLICATION</b>, Wichita Falls, TX",
+            "title" : "<b>LOCATION SEARCH APPLICATION</b>, Wichita Falls, TX (<a href='http://locationsearch.cf'>http://locationsearch.cf</a>)",
             "dates" : "September, 2016 - January, 2017",
-            "description" : "<a href='http://locationsearch.cf'>http://locationsearch.cf</a><br>A React based web application which allows users to search places by categories, zip code and radius. Upon querying, the locations are then displayed on a Google Map. <br> <b><u>Responsibilities:</u></b><br>" +
+            "description" : "A React based web application which allows users to search places by categories, zip code and radius. Upon querying, the locations are then displayed on a Google Map. <br> <b><u>Responsibilities:</u></b><br>" +
             "• Built user interfaces by creating re-usable <b>React</b> components. <br>• Created responsive UI using <b>Bootstrap</b>.<br> • Queried and retrieved location places by category and radius using <b>Four Square API</b>. <br>• Displayed locations within a <b>Google Map</b> using Google map markers.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification. <br> • Deployed and hosted the application using <b>Amazon Web Services (AWS)</b>.<br>" +
             "<b><u>Tech stack</u></b>: React, Bootstrap, Webpack, Babel ES6, Node.js, AWS, Google Maps, Four Square API. ",
             "images" : ["https://adithyamahesh596.github.io/images/location.png","https://adithyamahesh596.github.io/images/location2.png"]
         },
         {
-            "title" : "<b>COURSIFY</b>, Wichita Falls, TX",
+            "title" : "<b>COURSIFY</b>, Wichita Falls, TX (<a href='http://coursify.surge.sh'>http://coursify.surge.sh</a>)",
             "dates" : "July, 2017 - November, 2017",
-            "description" : "<a href='http://coursify.surge.sh'>http://coursify.surge.sh</a><br>A React based web application which allows users to add courses and manage courses.",
+            "description" : "A React based web application which allows users to add courses and manage courses.",
             "images" : ["https://adithyamahesh596.github.io/images/coursify3.png", "https://adithyamahesh596.github.io/images/coursify4.png", "https://adithyamahesh596.github.io/images/coursify5.png"]
         }
     ]
