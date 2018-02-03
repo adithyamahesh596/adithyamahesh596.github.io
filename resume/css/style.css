@@ -85,6 +85,12 @@ p {
   line-height: 21px;
 }
 
+#ghactivity {
+	margin-top:20px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
 a {
   color: #1199c3;
   text-decoration: none;
