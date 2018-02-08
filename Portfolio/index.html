@@ -9,9 +9,41 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-#projects {
+.projects {
 	padding: 20px;
 }
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons > a > i {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w3-third.projects > img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 
 </style>
 <body class="w3-light-grey">
@@ -27,7 +59,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA2WAAAAJDY5YzNhOTYxLTA3NDktNGIwMi04Yjg0LWM3YWE5NDMwZDg3OA.jpg" style="width:100%" alt="Avatar">
+          <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA2WAAAAJDY5YzNhOTYxLTA3NDktNGIwMi04Yjg0LWM3YWE5NDMwZDg3OA.jpg" style="width:100%;height:10%;" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
             <h2>Adithya Mahesh Bariki</h2>
           </div>
@@ -37,6 +69,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Sunnyvale, CA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>adithyamaheshbariki@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(408) 656-7994</p>
+          <p><i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.dropbox.com/s/zuqcbinwbm5izr1/ADITHYA_MAHESH_BARIKI.pdf?dl=0" target="_blank">View my PDF resume</a></p>
           <hr>
 			
 				  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Tech Stack</b></p>
@@ -110,34 +143,34 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
         <div class="w3-container">
 			<div class="w3-row">
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id01').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/Rovup.PNG?raw=true" style="width:100%"></img>
 				</div>
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id02').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/Chat_Application.png?raw=true" style="width:100%"></img>
 				</div>
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id03').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/Location_Search.png?raw=true" style="width:100%"></img>
 				</div>
 			</div>
 			
 			<div class="w3-row">
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id04').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/COURSIFY.png?raw=true" style="width:100%"></img>
 				</div>
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id05').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/FT-ATM.png?raw=true" style="width:100%"></img>
 				</div>
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id06').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/Weight.png?raw=true" style="width:100%"></img>
 				</div>
 			</div>
 			
 			<div class="w3-row">
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id07').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/Library.png?raw=true" style="width:100%"></img>
 				</div>
-				<div class="w3-third" id="projects">
+				<div class="w3-third projects">
 					<img class="w3-card" onclick="document.getElementById('id08').style.display='block'" src="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/images/shell.png?raw=true" style="width:100%"></img>
 				</div>
 			</div>
@@ -150,7 +183,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Internet</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
+          <p>Learning new technologies and updating my tech stack</p>
           <hr>
         </div>
         <div class="w3-container">
@@ -176,37 +209,42 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div class="icons">
+    <a href="http://facebook.com/adithyamahesh596" target="_blank"><i class="fa fa-facebook-official fa-2x fa-round w3-hover-opacity"></i></a>
+    <a href="https://github.com/adithyamahesh596" target="_blank"><i class="fa fa-twitter fa-2x fa-round w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/adithyamaheshbariki/" target="_blank"><i class="fa fa-linkedin fa-2x fa-round w3-hover-opacity"></i></a>
+    <p>FIND ME ON SOCIAL MEDIA</p>
+    </div>
 </footer>
 
 <!-- Modals -->
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-left w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h2>ROVUP</h2>
       </header>
       <div class="w3-container">
-        <p>A Web based application which allows travel agents to create, manage and promote their travel packages on different social media platforms. <br> <b><u>Responsibilities:</u></b><br>   • Built user interfaces by creating re-usable <b>React</b> components.<br> • Created responsive UI using <b>Bootstrap</b>.<br> • Used <b>Webpack</b> to run build tasks such as bundling and minification.<br/>  • Used <b>AWS</b> to host the application.<br/>   • Used <b>Jenkins</b> to run integration steps and AWS Code Deploy for deployments (Post-Build action).<br> <b><u>Tech stack</u></b>: React, Bootstrap, Webpack, PostgreSQL, Babel ES6, Node.js, AWS etc.</p>
-        
+        <p>A Web based application which allows travel agents to create, manage and promote their travel packages on different social media platforms <br>  
+		<ul>
+			<li>Built user interfaces by creating re-usable <b>React</b> components</li>
+			<li>Created responsive UI using <b>Bootstrap</b></li>
+			<li>Used <b>Webpack</b> to run build tasks such as bundling and minification</li>
+			<li>Used <b>AWS</b> to host the application</li>
+			<li>Used <b>Jenkins</b> to run integration steps and AWS Code Deploy for deployments (Post-Build action)</li>
+		</ul>
+		<b><u>Tech stack</u></b>: React, Bootstrap, Webpack, PostgreSQL, Babel ES6, Node.js, AWS etc.</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4>UNDER DEVELOPMENT</h4>
       </footer>
     </div>
   </div>
 
 <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id02').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h2>Chat Application</h2>
@@ -223,15 +261,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 			</ul>
 		</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p><a href="https://github.com/adithyamahesh596/chat_application" target="_blank">SOURCE CODE</a></p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4><a href="https://github.com/adithyamahesh596/chat_application" target="_blank">SOURCE CODE</a></h4>
       </footer>
     </div>
   </div>
 
 <div id="id03" class="w3-modal">
     <div class="w3-modal-content w3-animate-right w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id03').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h2>LOCATION SEARCH APPLICATION</h2>
@@ -252,28 +290,39 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 			<b><u>Tech stack</u></b>: React, Bootstrap, Webpack, Babel ES6, Node.js, AWS, Google Maps, Four Square API
 		</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>
-			<a href="https://github.com/adithyamahesh596/Location_Search_Application" target="_blank">SOURCE CODE</a>
-			<a href="http://locationsearch.cf" target="_blank">  LIVE DEMO</a>
-		</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4>
+			<a href="https://github.com/adithyamahesh596/Location_Search_Application" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;
+			<a href="http://locationsearch.cf" target="_blank">LIVE DEMO</a>
+        </h4>
       </footer>
     </div>
   </div>
 
 <div id="id04" class="w3-modal">
     <div class="w3-modal-content w3-animate-left w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id04').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>COURSIFY</h2>
       </header>
       <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+        <p>
+          A React based web application which allows users to add, manage and save courses using React/Redux<br/>
+          <ul>
+            <li>Entire application is built on <b>Node.js</b></li>
+            <li>Built user interfaces by creating reusable <b>React</b> components</li>
+            <li>Used <b>React Router</b> for page navigation</li>
+            <li>Used <b>Redux</b> to maintain application data</li>
+            <li>Ran tests using <b>Mocha</b></li>
+            <li>Created responsive UI using <b>Bootstrap</b></li>
+            <li>Deployed and hosted application on <b>Surge</b></li>
+          </ul>
+          <b><u>Tech Stack</u></b>: Node.js, Express, React, React Router, Redux, Bootstrap, Mocha
+        </p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4><a href="https://github.com/adithyamahesh596/React_And_redux" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a href="http://coursify.surge.sh" target="_blank">LIVE DEMO</a></h4>
       </footer>
     </div>
   </div>
@@ -283,65 +332,84 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <header class="w3-container w3-teal"> 
         <span onclick="document.getElementById('id05').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>FAULT TOLERANT-ATM</h2>
       </header>
       <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+        <p>A Java based application which is used to detect and tolerate the
+		errors in the ATM system using Heartbeat, Failover patterns and perform
+		withdraw of funds along with checking balance<br/>
+		<ul>
+			<li>Utilized <b>multi-threading</b> concept to manage object instances across the system</li>
+			<li>Created instances of a server and applied <b>Heartbeat</b> pattern to switch between instances</li>
+			<li>Implemented <b>Failover</b> pattern for the uninterrupted functioning of the ATM system</li>
+		</ul>
+		<b><u>Tech Stack</u></b>: Java, JDK 7, JRE 7, Eclipse
+		</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4><a href="https://github.com/adithyamahesh596/FT-ATM" target="_blank"><p>SOURCE CODE</p></a></h4>
       </footer>
     </div>
   </div>
 
 <div id="id06" class="w3-modal">
     <div class="w3-modal-content w3-animate-right w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id06').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>WEIGHT CONVERTER</h2>
       </header>
       <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+        <p>Weight Converter is a Vanilla JavaScript and a Bootstrap application which allows users to convert weights from one metric system to another metric system</p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4>
+        <a href="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/Weight_Converter/index.html" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a href="https://adithyamahesh596.github.io/Weight_Converter/" target="_blank">LIVE DEMO</a></h4>
       </footer>
     </div>
   </div>
 
 <div id="id07" class="w3-modal">
     <div class="w3-modal-content w3-animate-left w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id07').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>LIBRARY APPLICATION</h2>
       </header>
       <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+        <p>
+          A web application which provides variety of genres for book lovers and gives a glimpse of a specific book if you really want to get one
+          <ul>
+            <li> Entire application is built on <b>Node.js</b></li>
+            <li><b>Express</b> is used for handling routing and rendering</li>
+            <li>Implemented login functionality using <b>Passport</b> strategies</li>
+            <li>Used <b>Gulp</b> for managing tasks efficiently</li>
+            <li>Used <b>MongoDB</b> to maintain entire application's information i.e., books and authors</li>
+            <li>Fetched data from <b>Goodreads</b> API</li>
+          </ul>
+          <b><u>Tech Stack</u></b>: Node.js, Express, Grunt, Gulp, EJS, Passport.js, MongoDB, Goodreads API
+        </p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4><a href="https://github.com/adithyamahesh596/Library_App_with_Nodejs_And_Express" target="_blank">SOURCE CODE</a></h4>
       </footer>
     </div>
   </div>
 
 <div id="id08" class="w3-modal">
     <div class="w3-modal-content w3-animate-bottom w3-card-4">
-      <header class="w3-container w3-teal"> 
+      <header class="w3-container w3-teal w3-center"> 
         <span onclick="document.getElementById('id08').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
+        <h2>SHELL CMD</h2>
       </header>
       <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
+        <p>
+          SHELL CMD is a bash command simulator written in <b>Python</b> and when entered bash commands as input gives output exactly same as the bash terminal
+        </p>
       </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
+      <footer class="w3-container w3-teal w3-center">
+        <h4><a href="https://github.com/adithyamahesh596/5143-OpSys-bariki/blob/master/YO-Shell.v.1/shell.py" target="_blank">SOURCE CODE</a></h4>
       </footer>
     </div>
   </div>
