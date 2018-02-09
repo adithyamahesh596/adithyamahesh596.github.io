@@ -25,10 +25,24 @@ a {
   text-decoration: none;
 }
 
+.tech-stack > button {
+  margin: 5px;
+}
+
 .w3-third.projects > img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
+
+#info > p > span {
+  /* text-align: justify; */
+  text-justify: inter-word;
+  overflow-wrap: break-word;
+}
+
+/* #info {
+  overflow-wrap: break-word;
+} */
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -60,42 +74,40 @@ a {
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA2WAAAAJDY5YzNhOTYxLTA3NDktNGIwMi04Yjg0LWM3YWE5NDMwZDg3OA.jpg" style="width:100%;height:10%;" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
+          <div class="w3-display-bottom w3-container w3-text-black">
             <h2>Adithya Mahesh Bariki</h2>
           </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Stack Web Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Sunnyvale, CA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>adithyamaheshbariki@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(408) 656-7994</p>
-          <p><i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.dropbox.com/s/zuqcbinwbm5izr1/ADITHYA_MAHESH_BARIKI.pdf?dl=0" target="_blank">View my PDF resume</a></p>
+        <div class="w3-container" id="info">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><span>Full Stack Web Developer</span></p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><span>Sunnyvale, CA</span></p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><span>adithyamaheshbariki@gmail.com</span></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><span>(408) 656-7994</span></p>
+          <p><i class="fa fa-file fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.dropbox.com/s/zuqcbinwbm5izr1/ADITHYA_MAHESH_BARIKI.pdf?dl=0" target="_blank"><span>Checkout my PDF resume</span></a></p>
           <hr>
 			
 				  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Tech Stack</b></p>
-				<div class="w3-container">
-				<div class="w3-half" style="float:left;">
-					<p>Node.js</p>
-					<p>Express</p>
-				    <p>React/Redux</p>
-					<p>React-Native</p>
-				    <p>Webpack/Babel</p>
-					<p>PostgreSQL</p>
-					<p>MongoDB</p>
-					<p>Java</p>
-					<p>C#</p>
-				</div>
-				<div class="w3-half" style="float:right;">
-					<p>HTML5</p>
-					<p>CSS3</p>
-					<p>JavaScript/ES6</p>
-					<p>Bootstrap4</p>
-					<p>jQuery</p>
-					<p>MySQL</p>
-					<p>Python</p>
-					<p>C/C++</p>
-					<p>.NET</p>
-				</div>
+				<div class="w3-container tech-stack">
+				  <button class="w3-btn w3-teal w3-round">Node.js</button>
+          <button class="w3-btn w3-teal w3-round">Express</button>
+          <button class="w3-btn w3-teal w3-round">React</button>
+          <button class="w3-btn w3-teal w3-round">Redux</button>
+          <button class="w3-btn w3-teal w3-round">React-Native</button>
+          <button class="w3-btn w3-teal w3-round">Webpack</button>
+          <button class="w3-btn w3-teal w3-round">Babel</button>
+          <button class="w3-btn w3-teal w3-round">PostgreSQL</button>
+          <button class="w3-btn w3-teal w3-round">MongoDB</button>
+          <button class="w3-btn w3-teal w3-round">Java</button>
+          <button class="w3-btn w3-teal w3-round">HTML5</button>
+          <button class="w3-btn w3-teal w3-round">CSS3</button>
+          <button class="w3-btn w3-teal w3-round">JavaScript</button>
+          <button class="w3-btn w3-teal w3-round">ES6</button>
+          <button class="w3-btn w3-teal w3-round">Bootstrap</button>
+          <button class="w3-btn w3-teal w3-round">jQuery</button>
+          <button class="w3-btn w3-teal w3-round">MySQL</button>
+          <button class="w3-btn w3-teal w3-round">Python</button>
+          <button class="w3-btn w3-teal w3-round">C/C++</button>
+          <button class="w3-btn w3-teal w3-round">ASP.NET</button>
 				</div>
           <br>
 
@@ -188,13 +200,13 @@ a {
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Midwestern State University, Wichita Falls, TX</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January, 2016 - August, 2017</h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Aug 2017</h6>
           <p>Master of Science in Computer Science</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Jawaharlal Nehru Technological University, Hyderabad, India</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August, 2011 - May, 2015</h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2011 - May 2015</h6>
           <p>Bachelor of Science in Computer Science Engineering</p><br>
         </div>
       </div>
