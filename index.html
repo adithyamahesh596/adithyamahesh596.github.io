@@ -7,6 +7,7 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <style>
     html, body, h1, h2, h3, h4, h5, h6 {
         font-family: "Roboto", sans-serif
@@ -26,6 +27,12 @@
 
     a {
         text-decoration: none;
+        color: white !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+        opacity: 0.5 !important;
     }
 
     .tech-stack > button {
@@ -36,6 +43,11 @@
         width: 100%;
     }
 	
+    #button:hover {
+        background-color: none !important;
+        /* color: teal !important; */
+    }
+    
     
 
     .w3-third.projects > img:hover {
@@ -89,6 +101,7 @@
         }
     }
 
+    
 
 </style>
 
@@ -98,24 +111,24 @@
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
         <!-- The Grid -->
-        <div class="w3-row-padding">
+        <div class="row w3-row-padding">
 
             <!-- Left Column -->
-            <div class="w3-quarter">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
                 <div class="w3-white w3-text-grey w3-card-4">
-                    <!--                 <div class="w3-display-container">
-                    <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA2WAAAAJDY5YzNhOTYxLTA3NDktNGIwMi04Yjg0LWM3YWE5NDMwZDg3OA.jpg"
+                                    <div class="w3-display-container">
+                    <img src="https://media.licdn.com/dms/image/C5603AQFqjRTSgJrr5w/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=Ntyif15NKdbM8Y74TFleT2Qu_ke7g8YUEZ6XT-_aNf4"
                          style="width:100%;" alt="Avatar">
                     <div class="w3-display-bottom w3-container w3-text-black">
                         <h2>Adithya Mahesh Bariki</h2>
                     </div>
-                </div> -->
-                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
+                </div>
+                    <!-- <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
                         data-theme="dark" data-vanity="adithyamaheshbariki">
                         <a class="LI-simple-link" href='https://www.linkedin.com/in/adithyamaheshbariki?trk=profile-badge'>Adithya
                             Mahesh</a>
-                    </div>
+                    </div> -->
                     <div class="w3-container" id="info">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><span>Web Application
                                 Developer</span>
@@ -135,7 +148,7 @@
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Tech
                                 Stack</b></p>
                         <div class="w3-container tech-stack">
-                            <button class="w3-btn w3-teal w3-round">Node.js</button>
+                            <button class="w3-btn w3-teal w3-round" id="button">Node.js</button>
                             <button class="w3-btn w3-teal w3-round">Typescript</button>
                             <button class="w3-btn w3-teal w3-round">React</button>
                             <button class="w3-btn w3-teal w3-round">Redux</button>
@@ -181,7 +194,7 @@
             </div>
 
             <!-- Right Column -->
-            <div class="w3-threequarter">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
@@ -363,7 +376,7 @@
 
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <div class="icons">
-            <a href="http://facebook.com/adithyamahesh596" target="_blank"><i class="fa fa-facebook-official fa-2x fa-round w3-hover-opacity"></i></a>
+            <a href="http://facebook.com/adithyamahesh596" target="_blank"><i class="fa fa-teal fa-facebook-official fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://github.com/adithyamaheshb" target="_blank"><i class="fa fa-github fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://twitter.com/AdithyaMahesh96" target="_blank"><i class="fa fa-twitter fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/adithyamaheshbariki/" target="_blank"><i class="fa fa-linkedin fa-2x fa-round w3-hover-opacity"></i></a>
@@ -602,6 +615,9 @@
     </div>
 
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" async defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" async defer></script>
 </body>
 
 </html>
