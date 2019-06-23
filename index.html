@@ -39,7 +39,15 @@
         opacity: 0.5 !important;
     }
 
-    .tech-stack > button {
+    .details {
+        color: #757575 !important;
+    }
+
+    .details:hover {
+        color: black !important;
+    }
+
+    .tech-stack > button, a {
         margin: 5px;
     }
 
@@ -47,12 +55,14 @@
         width: 100%;
     }
 	
-    #button:hover {
+    .tech-stack > button:hover, a:hover {
         background-color: none !important;
         /* color: teal !important; */
     }
     
-    
+    .LI-badge-container.horizontal.dark {
+        width: auto !important;
+    }
 
     .w3-third.projects > img:hover {
         animation: shake 0.5s;
@@ -122,26 +132,32 @@
 
                 <div class="w3-white w3-text-grey w3-card-4">
                       <div class="w3-display-container">
-<!--                     <img src="https://media.licdn.com/dms/image/C5603AQFqjRTSgJrr5w/profile-displayphoto-shrink_200_200/0?e=1564012800&v=beta&t=yH4onna00lFgplwkFrJTRJvNMv1kiiSG0q9FareQXcA"
-                         style="width:100%;" alt="Avatar"> -->
+                    <!-- <img src="/AD.jpeg" style="width:200px; border-radius: 50%" alt="Avatar"> -->
 				<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
-                        data-theme="dark" data-vanity="adithyamaheshbariki" style="width: auto;">
+                        data-theme="dark" data-vanity="adithyamaheshbariki" style="width: 100%;">
                         		<a class="LI-simple-link" href='https://www.linkedin.com/in/adithyamaheshbariki?trk=profile-badge'>Adithya
                             			Mahesh</a>
 				</div>
                     </div>
-                    <div class="w3-display-bottom w3-container w3-text-black">
+                    <!-- <div class="w3-display-bottom w3-container w3-text-black">
                         <h2>Adithya Mahesh Bariki</h2>
-                    </div>
+                    </div> -->
                
                     
-                    <div class="w3-container" id="info">
+                    <div class="w3-container m-3" id="info">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><span>Web Application
                                 Developer</span>
                         </p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><span>Greenville, SC, USA</span>
                         </p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><span>adithyamaheshbariki@gmail.com</span>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                            <a href="mailto:adithymaheshbariki@gmail.com" target="_blank" class="details">adithyamaheshbariki@gmail.com</a>
+                        </p>
+                        <p><i class="fa fa-twitter fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                            <a href="https://twitter.com/AdithyaMahesh96" target="_blank" class="details">@AdithyaMahesh96</a>
+                        </p>
+                        <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                            <a href="https://github.com/adithyamaheshb" target="_blank" class="details">@adithyamaheshb</a>
                         </p>
                         <p>
                             <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><span>(408) 656-7994</span>
@@ -154,30 +170,32 @@
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Tech
                                 Stack</b></p>
                         <div class="w3-container tech-stack">
-                            <button class="w3-btn w3-teal w3-round" id="button">Node.js</button>
-                            <button class="w3-btn w3-teal w3-round">Typescript</button>
-                            <button class="w3-btn w3-teal w3-round">React</button>
-                            <button class="w3-btn w3-teal w3-round">Redux</button>
-                            <button class="w3-btn w3-teal w3-round">React-Native</button>
-                            <button class="w3-btn w3-teal w3-round">Webpack</button>
-                            <button class="w3-btn w3-teal w3-round">Babel</button>
-                            <button class="w3-btn w3-teal w3-round">PostgreSQL</button>
-                            <button class="w3-btn w3-teal w3-round">MongoDB</button>
-                            <button class="w3-btn w3-teal w3-round">Java</button>
-                            <button class="w3-btn w3-teal w3-round">HTML5</button>
-                            <button class="w3-btn w3-teal w3-round">CSS3</button>
-                            <button class="w3-btn w3-teal w3-round">JavaScript</button>
-                            <button class="w3-btn w3-teal w3-round">ES6</button>
-                            <button class="w3-btn w3-teal w3-round">Bootstrap</button>
-                            <button class="w3-btn w3-teal w3-round">jQuery</button>
-                            <button class="w3-btn w3-teal w3-round">MySQL</button>
-                            <button class="w3-btn w3-teal w3-round">Python</button>
-                            <button class="w3-btn w3-teal w3-round">C/C++</button>
-                            <button class="w3-btn w3-teal w3-round">ASP.NET</button>
+                            <a href="https://nodejs.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">Node.js</a>
+                            <a href="https://www.typescriptlang.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">Typescript</a>
+                            <a href="https://reactjs.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">React</a>
+                            <a href="https://redux.js.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">Redux</a>
+                            <a href="https://facebook.github.io/react-native" class="w3-btn w3-teal w3-round" role="button" target="_blank">React-Native</a>
+                            <a href="https://webpack.js.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">Webpack</a>
+                            <a href="https://babeljs.io/" class="w3-btn w3-teal w3-round" role="button" target="_blank">Babel</a>
+                            <a href="https://www.postgresql.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">PostgreSQL</a>
+                            <a href="https://www.mongodb.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">MongoDB</a>
+                            <a href="https://graphql.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">GraphQL</a>
+                            <a href="https://www.java.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">Java</a>
+                            <a href="https://w3c.github.io/html" class="w3-btn w3-teal w3-round" role="button" target="_blank">HTML</a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="w3-btn w3-teal w3-round" role="button" target="_blank">CSS</a>
+                            <a href="https://www.javascript.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">JavaScript</a>
+                            <a href="https://en.wikipedia.org/wiki/ECMAScript" class="w3-btn w3-teal w3-round" role="button" target="_blank">ES6</a>
+                            <a href="https://getbootstrap.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">Bootstrap</a>
+                            <a href="https://material-ui.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">Material UI</a>
+                            <a href="https://jquery.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">jQuery</a>
+                            <a href="https://www.mysql.com" class="w3-btn w3-teal w3-round" role="button" target="_blank">MySQL</a>
+                            <a href="https://www.python.org" class="w3-btn w3-teal w3-round" role="button" target="_blank">Python</a>
+                            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="w3-btn w3-teal w3-round" role="button" target="_blank">C/C++</a>
+                            <a href="https://dotnet.microsoft.com/apps/aspnet" class="w3-btn w3-teal w3-round" role="button" target="_blank">ASP.NET</a>
                         </div>
                         <br>
 
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
+                        <!-- <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
                         </p>
                         <p>English</p>
                         <div class="w3-light-grey w3-round-xlarge">
@@ -191,7 +209,7 @@
                         <div class="w3-light-grey w3-round-xlarge">
                             <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
                         </div>
-                        <br>
+                        <br> -->
                     </div>
                 </div>
                 <br>
@@ -206,7 +224,7 @@
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
                         Experience</h2>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Web Application Developer</b><i>, Computer Control + Integration and DECIDE4ACTION, </i><i> Greenville, SC</i></h5>
+                            <h5 class="w3-opacity"><b>Web Application Developer</b><i>, DECIDE4ACTION, </i><i> Greenville, SC</i></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2018 - <span
                                     class="w3-tag w3-teal w3-round">Current</span></h6>
                             <p>
@@ -292,7 +310,7 @@
                         <div class="w3-row">
                             <div class="w3-third projects">
                                 <img class="w3-card" onclick="document.getElementById('id01').style.display='block'"
-                                    src="https://github.com/adithyamaheshb/adithyamaheshb.github.io/blob/master/images/CharterTemps1.png?raw=true"
+                                    src="https://github.com/adithyamaheshb/adithyamaheshb.github.io/blob/master/images/Promailer.PNG?raw=true"
                                     style="width:100%" />
                             </div>
                             <div class="w3-third projects">
@@ -382,7 +400,7 @@
 
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <div class="icons">
-            <a href="http://facebook.com/adithyamahesh596" target="_blank"><i class="fa fa-teal fa-facebook-official fa-2x fa-round w3-hover-opacity"></i></a>
+            <a href="http://facebook.com/adithyamaheshb" target="_blank"><i class="fa fa-teal fa-facebook-official fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://github.com/adithyamaheshb" target="_blank"><i class="fa fa-github fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://twitter.com/AdithyaMahesh96" target="_blank"><i class="fa fa-twitter fa-2x fa-round w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/adithyamaheshbariki/" target="_blank"><i class="fa fa-linkedin fa-2x fa-round w3-hover-opacity"></i></a>
@@ -396,24 +414,24 @@
         <div class="w3-modal-content w3-animate-left w3-card-4">
             <header class="w3-container w3-teal w3-center">
                 <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <h2>Charter Temps</h2>
+                <h2>Promailer</h2>
             </header>
             <div class="w3-container">
-                <p>The application allows Charter Schools in US to request substitute teachers. Besides that, teachers
-                    who are available to fulfill substitute requests can submit their profiles to schools <br>
+                <p>The application allows to send surveys to your customers/clients and collect feedback from them in an organized and efficient manner <br>
                     <ul>
                         <li>Built responsive user interfaces by creating re-usable <b>React</b> components</li>
-                        <li>Used <b>Webpack</b> to run build tasks such as bundling and minification</li>
-                        <li>Used <b>AWS</b> to host the application</li>
+                        <li>Built reusable user inputs with <b>Redux Form</b>, complete with navigation</li>
+                        <li>Handled credit cards and received payments with <b>Stripe</b></li>
+                        <li>Engage your users with automated <b>emails</b> and enhanced authentication flows with <b>Google OAuth authentication</b></li>
                         <li>Used <b>Jenkins</b> to run integration steps and AWS Code Deploy for deployments
                             (Post-Build action)
                         </li>
                     </ul>
-                    <b><u>Tech stack</u></b>: React, Bootstrap, Webpack, PostgreSQL, Babel ES6, Node.js, AWS etc.
+                    <b><u>Tech stack</u></b>: React, Redux, Express, Bootstrap, Webpack, MongoDB, Node.js, AWS etc.
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://chartertemps.org/" target="_blank">LIVE
+                <h4><a href="https://promailer.herokuapp.com" target="_blank">LIVE
                         DEMO</a></h4>
             </footer>
         </div>
@@ -440,7 +458,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/chat_application" target="_blank">SOURCE CODE</a></h4>
+                <h4><a href="https://github.com/adithyamaheshb/chat_application" target="_blank">SOURCE CODE</a></h4>
             </footer>
         </div>
     </div>
@@ -470,7 +488,7 @@
             </div>
             <footer class="w3-container w3-teal w3-center">
                 <h4>
-                    <a href="https://github.com/adithyamahesh596/Location_Search_Application" target="_blank">SOURCE
+                    <a href="https://github.com/adithyamaheshb/Location_Search_Application" target="_blank">SOURCE
                         CODE</a>&nbsp;&nbsp;
                     <a href="http://locationsearch.gq" target="_blank">LIVE DEMO</a>
                 </h4>
@@ -500,7 +518,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/React_And_redux" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a
+                <h4><a href="https://github.com/adithyamaheshb/React_And_redux" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a
                         href="http://coursify.surge.sh" target="_blank">LIVE DEMO</a></h4>
             </footer>
         </div>
@@ -526,7 +544,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/FT-ATM" target="_blank">
+                <h4><a href="https://github.com/adithyamaheshb/FT-ATM" target="_blank">
                         <p>SOURCE CODE</p>
                     </a></h4>
             </footer>
@@ -545,8 +563,8 @@
             </div>
             <footer class="w3-container w3-teal w3-center">
                 <h4>
-                    <a href="https://github.com/adithyamahesh596/adithyamahesh596.github.io/blob/master/Weight_Converter/index.html"
-                        target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a href="https://adithyamahesh596.github.io/Weight_Converter/"
+                    <a href="https://github.com/adithyamaheshb/adithyamaheshb.github.io/blob/master/Weight_Converter/index.html"
+                        target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a href="https://adithyamaheshb.github.io/Weight_Converter/"
                         target="_blank">LIVE DEMO</a></h4>
             </footer>
         </div>
@@ -575,7 +593,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/Library_App_with_Nodejs_And_Express" target="_blank">SOURCE
+                <h4><a href="https://github.com/adithyamaheshb/Library_App_with_Nodejs_And_Express" target="_blank">SOURCE
                         CODE</a></h4>
             </footer>
         </div>
@@ -595,7 +613,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/5143-OpSys-bariki/blob/master/YO-Shell.v.1/shell.py"
+                <h4><a href="https://github.com/adithyamaheshb/5143-OpSys-bariki/blob/master/YO-Shell.v.1/shell.py"
                         target="_blank">SOURCE CODE</a></h4>
             </footer>
         </div>
@@ -614,7 +632,7 @@
                 </p>
             </div>
             <footer class="w3-container w3-teal w3-center">
-                <h4><a href="https://github.com/adithyamahesh596/TrendGif" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a
+                <h4><a href="https://github.com/adithyamaheshb/TrendGif" target="_blank">SOURCE CODE</a>&nbsp;&nbsp;<a
                         href="http://trendgif.surge.sh" target="_blank">LIVE DEMO</a></h4>
             </footer>
         </div>
